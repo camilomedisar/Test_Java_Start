@@ -1,0 +1,90 @@
+<?page title="productos" contentType="text/html;charset=UTF-8"?>
+<zk>
+
+<hlayout vflex="1">     
+   
+<window vflex="1" hflex="4" title="productos" border="normal" apply="com.portalj.ctrl.CatProductoCtrl">
+		
+	<groupbox hflex="true">
+      <caption label="Player1" />
+      First player:
+      <textbox id="Player1" cols="20"  />
+      Second Player:
+      <textbox id="Player2" cols="20"   />
+      Matrix:
+      <intbox id="intMatrix" cols="10"  constraint="no empty, no zero" />
+      
+         :
+      <button id="btnStart" label="Start" width="90px"
+        height="40px" />
+        <separator></separator>
+        
+              Row: 
+      <intbox id="Row" cols="20" constraint="no empty" />
+     		Col:
+      <intbox id="Column" cols="20"  constraint="no empty" />
+        
+        :
+      <button id="btnOK" label="O" width="90px"
+        height="40px" />
+        <separator></separator>
+        	  Row:
+        <intbox id="Row2" cols="20" constraint="no empty" />
+     		Col:
+      <intbox id="Column2" cols="20"  constraint="no empty" />
+        
+        :
+      <button id="btnOK2" label="X" width="90px"
+        height="40px" />
+        <separator></separator>
+         			In Game:
+         <textbox id="Status" cols="40" constraint="no empty" />
+        
+        
+   
+    </groupbox>
+ 
+
+		
+		
+		<button  id="btnGuardar" label="Guardar"/>
+				
+	<listbox id="lbxCatProducto">
+	
+	<listhead>
+	 <listheader label="1"/>
+	<listheader label="2"/>
+	<listheader label="3"/>
+	<listheader label="4"/>
+	
+	<listheader label="5"/>
+	<listheader label="6"/>
+	<listheader label="7"/>
+	<listheader label="8"/>
+	<listheader label="9"/>
+	
+	
+	
+	</listhead>
+	
+		
+	</listbox>
+	
+	<listbox id="lbxCatProducto2">
+	
+	<listhead>
+	 <listheader label="Ganador"/>
+	<listheader label="juego#"/>
+	
+	
+	</listhead>
+	
+	</listbox>
+	
+	
+	
+</window>
+
+</hlayout>   
+</zk>
+

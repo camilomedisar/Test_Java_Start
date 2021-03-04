@@ -1,0 +1,8 @@
+<?page title="Auto Generated index.zul"?>
+<window title="Welcome to the game Noughts Crosses!" border="normal" width="200px" apply="com.portalj.ctrl.IndexCtrl">
+
+<label id="juegoSaludo"/>
+
+
+<button id="btnsaludo" label="Demo evento"></button>
+</window>
